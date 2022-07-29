@@ -1,0 +1,153 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top banner */
+header{
+    margin: 3% 2%;
+    width: 96%;
+}
+
+.top-banner{
+    display: flex;
+    padding: 3% 5%;
+    border-radius: 20px;
+    background-color: #808080;
+}
+
+
+
+.top-content{
+    width: 45%;
+    color: #ffff;
+}
+
+.top-content h1{
+    width: 100%;
+    font-size: 5em;
+}
+
+.top-para p{
+    font-size: 1.2em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.top-banner img{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #d54949df;
+    border: 0;
+}
+
+header button a{
+    font-size: 2em;
+    color: #ffff;
+    text-decoration: none;
+}
+
+header button i{
+    margin-left: 30px;
+}
+
+main{
+    display: flex;
+    margin: 2%;
+}
+
+
+/* side menu */
+
+menu{
+ width: 50%;
+ height:fit-content;
+ border-radius: 15px;
+ padding: 2% 2%;
+ background-color: black;
+}
+
+.menu-button{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-button button{
+    background-color: #fff;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 15px 10px;
+    border-radius: 15px;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#active-color {
+    background-color: red;
+}
+
+#active-color a{
+    color: #ffff;
+}
+
+
+/* blog */
+
+.main-blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.post{
+    margin: 15px 15px;
+    box-shadow: 1px 0px 5px 1px #88888875;;
+    border-radius: 10px;
+    color: #444444;
+}
+
+.post img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius:10px 10px 0 0;
+}
+
+.blog-content {
+    margin: 0px 15px;
+}
+
+.blog-content button{
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 10px 25px;
+    font-size: 1.3em;
+}
+
+.blog-content h2{
+    font-size: 1.2em;
+}
+
+.post-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.post-icon i{
+    margin-right: 5px;
+}
+
+.post-icon h3{
+    margin-right: 25px;
+}
