@@ -152,6 +152,46 @@ menu{
     margin-right: 25px;
 }
 
+
+
+
+/* upcoming match */
+
+.upcoming-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.post-img{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}
+
+.post-img img{
+    width: 40%;
+    margin: auto;
+}
+
+
+.match{
+    margin: 15px 15px;
+    box-shadow: 1px 0px 5px 1px #88888875;;
+    border-radius: 10px;
+    color: #444444;
+}
+
+.match-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+
 /* Footer */
 
 footer{
