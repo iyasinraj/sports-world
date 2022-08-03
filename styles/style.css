@@ -60,6 +60,11 @@ header button i{
     margin-left: 30px;
 }
 
+.mobile-only{
+    visibility: hidden;
+}
+
+
 main{
     display: flex;
     margin: 2%;
@@ -273,6 +278,10 @@ footer i{
         margin-left: 15px;
     }
 
+    .mobile-only{
+        display: none;
+    }
+
     /* main */
     main{
         display: flex;
@@ -302,6 +311,10 @@ footer i{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .last-post{
+        display: none;
+    }
+
     .see-more{
         visibility: visible;
         display: flex;
@@ -326,8 +339,6 @@ footer i{
     /* footer section */
 
     .links{
-        /* display: grid;
-        grid-template-columns: repeat(4, 1fr); */
         width: 80%;       
         display: flex;
         flex-wrap: wrap;
@@ -339,6 +350,101 @@ footer i{
 
 /* for mobile */
 
-@media only screen and (max-width:688) {
+@media only screen and (max-width: 688px) {
+   
+    /* top section */
+
+    .top-banner{
+        display: flex;
+        flex-direction: column;
+    }
     
+    .top-content{
+        width: 80%;
+        margin: auto;
+        color: #ffff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-content h1{
+        width: 100%;
+        font-size: 2.5em;
+    }
+
+    .top-content button{
+        display: none;
+    }
+
+    .mobile-only{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        margin-top: -100;
+    }
+
+    .mobile-only button{
+        width: 40%;
+        font-size: 7px;
+        padding: 10px 5px;
+    }
+
+    .mobile-only button i{
+        margin-left: 15px;
+    }
+
+
+
+    /* main */
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* menu */
+    menu{
+        width: 98%;
+        display: flex;
+        background-color: #fff;
+    }
+    .menu-button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-button button{
+        width: 98%;
+        border: solid #808080;
+    }
+    
+    /* blog section */
+    .main-blog, .upcoming-match{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /* footer section */
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a{
+        margin-bottom: 10px;
+    }
+
+
+    footer a{
+        margin-right:5px;
+    }
+
+    footer i{
+        font-size: 1em;
+        margin-top: 0;
+        padding: 20px;
+    }
 }
