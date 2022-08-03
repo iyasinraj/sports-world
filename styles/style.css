@@ -156,8 +156,6 @@ menu{
 }
 
 
-
-
 /* upcoming match */
 
 .upcoming-match{
@@ -193,7 +191,9 @@ menu{
 }
 
 
-
+.see-more{
+    visibility: hidden;
+}
 
 /* Footer */
 
@@ -203,7 +203,7 @@ footer{
     align-items: center;
     padding: 5% 10%;
     color: #ffff;
-    background-color: #101040;
+    background-color: #1010407c;
 }
 
 footer h1{
@@ -302,6 +302,37 @@ footer i{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .see-more{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        margin: 3% 0%;
+    }
+    
+    .see-more button{
+        background-color: red;
+        border: 0;
+        padding: 20px 30px;
+        border-radius: 10px;
+        font-size: 1.7em;
+    }
+    
+    .see-more button a{
+        text-decoration: none;
+        color: #ffff;
+    }
+
+
+    /* footer section */
+
+    .links{
+        /* display: grid;
+        grid-template-columns: repeat(4, 1fr); */
+        width: 80%;       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
 
 }
 
